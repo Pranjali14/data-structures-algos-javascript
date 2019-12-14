@@ -11,7 +11,7 @@ function findLongestPalindromicStr(string) {
         break;
       }
       let sub = isPalindrome(subString);
-      if (subString.length > longestLength && sub) {
+      if (sub && (subString.length > longestLength) ){
         longestLength = subString.length;
         console.log("ins", sub, subString);
       }
